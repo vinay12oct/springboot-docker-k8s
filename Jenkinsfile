@@ -8,12 +8,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/Vinay12oct/springboot-docker-k8s.git'
-            }
-        }
-
         stage('Build Application') {
             steps {
                 bat 'mvn clean package'
